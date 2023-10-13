@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 
-import { PrepareUpload } from "./PrepareUpload";
+import { TailorContent } from "./TailorContent";
 import TwelveLabsApi from "./TwelveLabsApi";
 
 function App() {
@@ -33,8 +33,8 @@ function App() {
 
   return (
     <div>
-      <h1>Prepare Upload</h1>
-      <PrepareUpload video={video} />
+      <h1>Tailor Content</h1>
+      <TailorContent video={video} />
     </div>
   );
 }
