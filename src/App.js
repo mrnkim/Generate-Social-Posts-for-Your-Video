@@ -33,7 +33,6 @@ function App() {
 
   return (
     <div>
-      <h1>Tailor Content</h1>
       <TailorContent video={video} />
     </div>
   );

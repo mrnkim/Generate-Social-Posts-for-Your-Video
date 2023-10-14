@@ -1,7 +1,9 @@
+import "./Result.css";
+
 export function Result({ result }) {
   return (
-    <div>
-      <h2>Result</h2>
+    <div className="result">
+      <div className="resultTitle">Result</div>
       <div>{result.data}</div>
     </div>
   );

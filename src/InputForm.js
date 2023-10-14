@@ -1,4 +1,5 @@
 import { React } from "react";
+import "./InputForm.css";
 
 export function InputForm({
   prompt,
@@ -36,20 +37,26 @@ export function InputForm({
   }
 
   return (
-    <form>
-      <div>
-        <label htmlFor="prompt">Prompt</label>
-        <input
-          type="text"
-          id="prompt"
-          name="prompt"
-          value={prompt}
-          onChange={handleChange}
-        />
-      </div>
-      <button onClick={handleClick} disabled={loading}>
-        Generate
-      </button>{" "}
-    </form>
+    <div className="inputForm">
+      <div className="title">Prompt</div>
+      <form className="form">
+        <div>
+          <textarea
+            type="text"
+            id="prompt"
+            name="prompt"
+            value={prompt}
+            onChange={handleChange}
+          />
+        </div>
+        <button
+          className="generateButton"
+          onClick={handleClick}
+          disabled={loading}
+        >
+          Generate
+        </button>{" "}
+      </form>
+    </div>
   );
 }
