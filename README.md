@@ -59,3 +59,5 @@ Use this app to effortlessly create social media posts of any type – from shor
 - Implement video upload feature
 - Add (or automate) test
 - Improve error handling and add data validations
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
