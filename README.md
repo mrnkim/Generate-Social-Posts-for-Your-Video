@@ -43,7 +43,7 @@ Use this app to effortlessly create social media posts of any type – from shor
 
 1. Clone the current repo
    ```sh
-   git clone git@github.com:mrnkim/prepare-upload.git
+   git clone git@github.com:mrnkim/Generate-Social-Posts-for-Your-Video.git
    ```
 2. Install and start the client
 
