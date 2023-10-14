@@ -28,7 +28,7 @@ export function TailorContent({ video }) {
 
   return (
     <div className="tailorContent">
-      <h1 className="appTitle">Tailor Content</h1>
+      <h1 className="appTitle">Generate Social Posts for Your Video</h1>
       <div className="videoUrlUploadForm">
         <VideoUrlUploadForm />
       </div>

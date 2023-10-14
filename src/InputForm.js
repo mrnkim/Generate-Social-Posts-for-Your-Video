@@ -38,7 +38,7 @@ export function InputForm({
 
   return (
     <div className="inputForm">
-      <div className="title">Prompt</div>
+      <div className="title">What social post do you want to generate?</div>
       <form className="form">
         <div>
           <textarea
