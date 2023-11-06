@@ -10,6 +10,7 @@ export function GeneratePost({ video, index, fetchVideo }) {
   const [loading, setLoading] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [result, setResult] = useState("");
+  console.log("🚀 > GeneratePost > result=", result)
   const [selectedFile, setSelectedFile] = useState(false);
   const [isFileUploading, setIsFileUploading] = useState(false);
 
@@ -64,7 +65,7 @@ export function GeneratePost({ video, index, fetchVideo }) {
         )}
       </div>
       {loading && <p>Loading...</p>}
-      {!loading && result.result && !selectedFile && video.data && (
+      {!loading && result && !selectedFile && video.data && (
         <Result result={result} />
       )}{" "}
     </div>
