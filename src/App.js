@@ -17,6 +17,7 @@ function App() {
     fetchVideo();
   }, []);
 
+  /** Fetch the first video of a given index */
   async function fetchVideo() {
     try {
       const response = await TwelveLabsApi.getFirstVideo(INDEX_ID);
