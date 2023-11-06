@@ -1,5 +1,11 @@
 import "./Result.css";
 
+/** Shows the results
+ *
+ * App -> GenerateTitles -> {Result}
+ *
+ */
+
 export function Result({ result }) {
   return (
     <div className="result">

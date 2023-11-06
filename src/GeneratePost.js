@@ -6,11 +6,16 @@ import { Result } from "./Result";
 import "./GeneratePost.css";
 import TwelveLabsApi from "./TwelveLabsApi";
 
+/** Generate Post App
+ *
+ * App -> GeneratePost -> {VideoFileUploadForm, Video, InputForm, Result}
+ *
+ */
+
 export function GeneratePost({ video, index, fetchVideo }) {
   const [loading, setLoading] = useState(false);
   const [prompt, setPrompt] = useState("");
   const [result, setResult] = useState("");
-  console.log("🚀 > GeneratePost > result=", result)
   const [selectedFile, setSelectedFile] = useState(false);
   const [isFileUploading, setIsFileUploading] = useState(false);
 

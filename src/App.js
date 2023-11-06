@@ -3,9 +3,14 @@ import { useEffect, useState } from "react";
 import { GeneratePost } from "./GeneratePost";
 import TwelveLabsApi from "./TwelveLabsApi";
 
+/** Generate Post App
+ *
+ * App -> GeneratePost
+ *
+ */
+
 function App() {
   const [video, setVideo] = useState({ data: null, isLoading: true });
-  console.log("🚀 > App > video=", video);
   const INDEX_ID = process.env.REACT_APP_INDEX_ID;
 
   useEffect(function fetchVideoOnMount() {
